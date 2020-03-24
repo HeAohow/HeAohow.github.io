@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>EDA | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="datawhale.1 数据探索性分析（EDA） 一、常用python库 数据科学库 numpy pandas scipy   可视化库 matplotlib seabon   其他具体功能库  二、基本数据分析流程 载入数据，通过head方法和打印shape来大体上把握数据 数据概览 describe方法查看相关统计量 info方法总览数据类型   数据缺失和异常 每种类型数据是否存在NaN 注">
+<meta property="og:type" content="article">
+<meta property="og:title" content="EDA">
+<meta property="og:url" content="http://yoursite.com/2020/03/24/EDA/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="datawhale.1 数据探索性分析（EDA） 一、常用python库 数据科学库 numpy pandas scipy   可视化库 matplotlib seabon   其他具体功能库  二、基本数据分析流程 载入数据，通过head方法和打印shape来大体上把握数据 数据概览 describe方法查看相关统计量 info方法总览数据类型   数据缺失和异常 每种类型数据是否存在NaN 注">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-24T14:05:33.000Z">
+<meta property="article:modified_time" content="2020-03-24T14:05:33.257Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-EDA" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/24/EDA/" class="article-date">
+  <time datetime="2020-03-24T14:05:33.000Z" itemprop="datePublished">2020-03-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      EDA
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="datawhale-1-数据探索性分析（EDA）"><a href="#datawhale-1-数据探索性分析（EDA）" class="headerlink" title="datawhale.1 数据探索性分析（EDA）"></a>datawhale.1 数据探索性分析（EDA）</h3><hr>
+<h4 id="一、常用python库"><a href="#一、常用python库" class="headerlink" title="一、常用python库"></a>一、常用python库</h4><ol>
+<li>数据科学库<ul>
+<li>numpy</li>
+<li>pandas</li>
+<li>scipy</li>
+</ul>
+</li>
+<li>可视化库<ul>
+<li>matplotlib</li>
+<li>seabon</li>
+</ul>
+</li>
+<li>其他具体功能库</li>
+</ol>
+<h4 id="二、基本数据分析流程"><a href="#二、基本数据分析流程" class="headerlink" title="二、基本数据分析流程"></a>二、基本数据分析流程</h4><ol>
+<li>载入数据，通过head方法和打印shape来大体上把握数据</li>
+<li>数据概览<ul>
+<li>describe方法查看相关统计量</li>
+<li>info方法总览数据类型</li>
+</ul>
+</li>
+<li>数据缺失和异常<ul>
+<li>每种类型数据是否存在NaN</li>
+<li>注意异常值</li>
+</ul>
+</li>
+<li>了解预测值分布<ul>
+<li>总体分布情况</li>
+<li>查看skewness和kurtosis</li>
+<li>查看预测值的具体频数</li>
+</ul>
+</li>
+<li>数字特征分析<ul>
+<li>特征间相关性</li>
+<li>特征的skewness和kurtosis</li>
+<li>特征值分布可视化</li>
+<li>特征关系可视化</li>
+<li>多变量相互回归关系可视化</li>
+</ul>
+</li>
+<li>类型特征分析<ul>
+<li>特征的unique分布</li>
+<li>特征可视化（箱型图、小提琴图）</li>
+<li>特征类别频数可视化（直方图）</li>
+</ul>
+</li>
+<li>综合性分析——pandas-profiling数据报告</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/24/EDA/" data-id="ck85z1sr20000wcqs9m7ifqrz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/24/EDA/">EDA</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
