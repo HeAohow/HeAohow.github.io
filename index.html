@@ -17,18 +17,15 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"github.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"github.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="世界映射到我的维度">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="Demension">
 <meta property="og:url" content="https://github.com/HeAohow/HeAohow.github.io/index.html">
 <meta property="og:site_name" content="Demension">
-<meta property="og:description" content="世界映射到我的维度">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="heaohow">
-<meta property="article:tag" content="keywords">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://github.com/HeAohow/HeAohow.github.io/">
@@ -98,11 +95,12 @@
       <h1 class="site-title">Demension</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
-      <p class="site-subtitle" itemprop="description">test for subtitle</p>
+      <p class="site-subtitle" itemprop="description">世界映射到我的维度</p>
   </div>
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -137,11 +135,38 @@
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -163,13 +188,14 @@
       
   
   
+
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://github.com/HeAohow/HeAohow.github.io/2020/11/24/DP_test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="heaohow">
-      <meta itemprop="description" content="世界映射到我的维度">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -178,7 +204,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/11/24/DP_test/" class="post-title-link" itemprop="url">DP_test</a>
+            <a href="/2020/11/24/DP_test/" class="post-title-link" itemprop="url">leetcode-动态规划-1</a>
         </h2>
 
         <div class="post-meta">
@@ -195,10 +221,33 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-12-31 16:23:37" itemprop="dateModified" datetime="2020-12-31T16:23:37+08:00">2020-12-31</time>
+                <time title="修改时间：2021-01-06 16:16:28" itemprop="dateModified" datetime="2021-01-06T16:16:28+08:00">2021-01-06</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+                </span>
+            </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>6.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
 
         </div>
       </header>
@@ -209,149 +258,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><p><a href="https://leetcode-cn.com/leetbook/read/dynamic-programming-1-plus/5rqhkt/" target="_blank" rel="noopener">动态规划精讲1-题目列表</a></p>
-<h2 id="问题的特点"><a href="#问题的特点" class="headerlink" title="问题的特点"></a>问题的特点</h2><ul>
+          <h1 id="动态规划">动态规划</h1>
+<p><a href="https://leetcode-cn.com/leetbook/read/dynamic-programming-1-plus/5rqhkt/" target="_blank" rel="noopener">动态规划精讲1-题目列表</a></p>
+<h2 id="问题的特点">问题的特点</h2>
+<ul>
 <li>最优子结构：原问题的最优解可以通过子问题的最优解推出。一般使用状态转移方程描述子问题之间、子问题和原问题之间的转化关系。</li>
 <li>重复子问题：求解不同子问题时需要进行大量相同的运算。动态规划中可采用记忆化递归或递推的方法减少重复问题的计算。如果子问题之间无重复，使用动态规划不能减少重复计算，效率和普通递归相同。</li>
 </ul>
-<h2 id="和其他算法的区别"><a href="#和其他算法的区别" class="headerlink" title="和其他算法的区别"></a>和其他算法的区别</h2><h3 id="分治"><a href="#分治" class="headerlink" title="分治"></a>分治</h3><p>基本思想是减小子问题规模，分别求解子问题，然后综合子问题的解得出最终结果。分治法能够高效解决有最优子结构，但是没有重复子问题的问题。</p>
-<h3 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h3><table>
-<thead>
-<tr>
-<th align="left"></th>
-<th align="left">动态规划</th>
-<th align="left">贪心</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">最优子结构</td>
-<td align="left">原问题最优解中一定包含某个子问题最优解，但不一定包含上一步子问题的最优解，因此需要记录之前所有子问题的最优解</td>
-<td align="left">每一步的最优解都一定包含上一步子问题的最优解，因此无需记录上一步之前的最优解</td>
-</tr>
-<tr>
-<td align="left">重复子问题</td>
-<td align="left">大量重复子问题</td>
-<td align="left">只要处理每步贪心策略选择出的一个子问题</td>
-</tr>
-<tr>
-<td align="left">结果正确性</td>
-<td align="left">动态规划的本质是穷举法（需要考虑所有子问题，但可以避免重复的计算），因此结果一定正确</td>
-<td align="left">求得的是贪心意义上的最优解，不能保证正确</td>
-</tr>
-<tr>
-<td align="left">算法复杂度</td>
-<td align="left">复杂度高</td>
-<td align="left">复杂度低</td>
-</tr>
-</tbody></table>
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h2 id="线性动态规划"><a href="#线性动态规划" class="headerlink" title="线性动态规划"></a>线性动态规划</h2><p>线性动态规划的主要特点是状态的推导是按照问题规模从小到大依次递推的，较大规模的问题的解依赖较小规模的问题的解。<br>线性动态规划解决的问题主要是单串，双串，矩阵上的问题，因为问题规模可以用位置表示，并且位置的大小就是问题规模的大小。因此从前往后推位置就相当于从小到大推问题规模。</p>
-<p>最长上升子序列 / 最长递增子序列(LIS): Longest Increasing Subsequence<br>最长连续序列(LCS): Longest Consecutive Sequence<br>最长连续递增序列(LCIS): Longest Continuous Increasing Subsequence<br>最长公共子序列(LCS): Longest Common Subsequence</p>
-<p>子串：一定连续<br>子序列：可以不连续</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 状态定义</span></span><br><span class="line">dp[n] = [<span class="number">0</span>, n]区间上问题的解</span><br><span class="line"><span class="comment">// 状态转移方程，由规模更小的状态转移而来</span></span><br><span class="line">dp[n] = f(dp[n - <span class="number">1</span>], dp[n - <span class="number">2</span>], ..., dp[<span class="number">0</span>])</span><br></pre></td></tr></table></figure>
-
-<h2 id="线性DP-LIS"><a href="#线性DP-LIS" class="headerlink" title="线性DP-LIS"></a>线性DP-LIS</h2><table>
-<thead>
-<tr>
-<th align="left">题目</th>
-<th align="left">难度</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://leetcode-cn.com/problems/longest-increasing-subsequence/" target="_blank" rel="noopener">300. 最长上升子序列</a></td>
-<td align="left">中等</td>
-<td align="left">单串-LIS</td>
-</tr>
-<tr>
-<td align="left"><a href="https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/" target="_blank" rel="noopener">673. 最长递增子序列的个数</a></td>
-<td align="left">中等</td>
-<td align="left">单串-LIS扩展</td>
-</tr>
-<tr>
-<td align="left"><a href="https://leetcode-cn.com/problems/russian-doll-envelopes/" target="_blank" rel="noopener">354. 俄罗斯套娃信封问题</a></td>
-<td align="left">困难</td>
-<td align="left">单串-LIS｜排序<br/>字节</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<h3 id="最长上升子序列"><a href="#最长上升子序列" class="headerlink" title="最长上升子序列"></a>最长上升子序列</h3><!-- <div align="center"><img src="img/DP/300.png" style="zoom:50%;" /></div> -->
-<img src="img/DP/300.png" style="zoom:50%;" />
-
-<p>状态定义：<br>$dp[i]$表示以$nums[i]$结尾的最长上升子序列的长度。</p>
-<p>状态转移：<br>$$dp[i] = \left {<br>\begin{aligned}<br>s.t. \quad j \in [0, i - 1],; nums[j] &lt; nums[i] \<br>max(dp[i],; dp[j] + 1) \<br>\end{aligned} \right.$$</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// TODO 分治</span></span><br><span class="line">    <span class="comment">// 方法 1</span></span><br><span class="line">    <span class="comment">// T = O(N^2), S = O(N)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthOfLIS</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums == <span class="keyword">null</span> || nums.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> len = nums.length;</span><br><span class="line">        <span class="keyword">int</span> max_len = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span>[] dp = <span class="keyword">new</span> <span class="keyword">int</span>[len];</span><br><span class="line">        Arrays.fill(dp, <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; len; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(nums[j] &lt; nums[i])&#123;</span><br><span class="line">                    dp[i] = Math.max(dp[i], dp[j] + <span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            max_len = Math.max(max_len, dp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> max_len;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="最长递增子序列的个数"><a href="#最长递增子序列的个数" class="headerlink" title="最长递增子序列的个数"></a>最长递增子序列的个数</h3><img src="img/DP/673.png" style="zoom:50%;"/>
-
-<p>状态定义：<br>$dp[i]$表示以$nums[i]$结尾的最长递增子序列的长度；<br>$count[i]$表示以$nums[i]$结尾的最长递增子序列（长度相同）的组合个数。</p>
-<p>转移方程：<br>$$dp[i] = \left { \begin{aligned}<br>s.t. \quad j \in [0, i - 1],; nums[i] &gt; nums[j] \<br>max(dp[i],; dp[j] + 1) \<br>\end{aligned} \right.$$<br>$$count[i] = \left { \begin{aligned}<br>s.t. \quad j \in [0, i - 1],; nums[i] &gt; nums[j] \<br>count[j] \quad dp[i] &lt; dp[j] + 1 \<br>sum(count[i],; count[j]) \quad dp[i] = dp[j] + 1 \<br>\end{aligned} \right.$$</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findNumberOfLIS</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums == <span class="keyword">null</span> || nums.length &lt; <span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> len = nums.length;</span><br><span class="line">        <span class="keyword">int</span>[] dp = <span class="keyword">new</span> <span class="keyword">int</span>[len];</span><br><span class="line">        <span class="keyword">int</span>[] count = <span class="keyword">new</span> <span class="keyword">int</span>[len];</span><br><span class="line">        Arrays.fill(dp, <span class="number">1</span>);</span><br><span class="line">        Arrays.fill(count, <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">int</span> max = <span class="number">1</span>;</span><br><span class="line">        <span class="comment">// 最长上升子串只需一层循环</span></span><br><span class="line">        <span class="comment">// 最长上升子序列则需要二重循环嵌套</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(nums[j] &lt; nums[i])&#123;</span><br><span class="line">                    <span class="comment">// 第一次找到以nums[i]结尾的LIS</span></span><br><span class="line">                    <span class="keyword">if</span>(dp[j] + <span class="number">1</span> &gt; dp[i])&#123;</span><br><span class="line">                        dp[i] = dp[j] + <span class="number">1</span>;</span><br><span class="line">                        count[i] = count[j];</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span> <span class="keyword">if</span>(dp[j] + <span class="number">1</span> == dp[i])&#123;</span><br><span class="line">                        <span class="comment">// 以nums[i]结尾的LIS已被找到过</span></span><br><span class="line">                        count[i] += count[j];</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 记录最长子序列的长度</span></span><br><span class="line">            max = Math.max(max, dp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(dp[i] == max)&#123;</span><br><span class="line">                res += count[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="俄罗斯套娃信封问题"><a href="#俄罗斯套娃信封问题" class="headerlink" title="俄罗斯套娃信封问题"></a>俄罗斯套娃信封问题</h3><img src="img/DP/354.png" style="zoom:50%;">
-
-<p>排序 + LIS，状态定义和转移方程同第300题。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxEnvelopes</span><span class="params">(<span class="keyword">int</span>[][] envelopes)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// T = O(N^2 + NlogN) = O(N^2), S = O(N)</span></span><br><span class="line">        <span class="keyword">if</span>(envelopes == <span class="keyword">null</span> || envelopes.length == <span class="number">0</span> || envelopes[<span class="number">0</span>].length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> len = envelopes.length;</span><br><span class="line"></span><br><span class="line">        Arrays.sort(envelopes, (o1, o2) -&gt; &#123;</span><br><span class="line">            <span class="comment">// 先按照宽度升序排序</span></span><br><span class="line">            <span class="keyword">if</span>(o1[<span class="number">0</span>] != o2[<span class="number">0</span>])&#123;</span><br><span class="line">                <span class="keyword">return</span> o1[<span class="number">0</span>] - o2[<span class="number">0</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="comment">// 如果宽度相同则按高度降序排序</span></span><br><span class="line">                <span class="keyword">return</span> o2[<span class="number">1</span>] - o1[<span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span>[] dp = <span class="keyword">new</span> <span class="keyword">int</span>[len + <span class="number">1</span>];</span><br><span class="line">        Arrays.fill(dp, <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(envelopes[i][<span class="number">1</span>] &gt; envelopes[j][<span class="number">1</span>])&#123;</span><br><span class="line">                    dp[i] = Math.max(dp[i], dp[j] + <span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            res = Math.max(res, dp[i]);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="线性DP-最大子数组和"><a href="#线性DP-最大子数组和" class="headerlink" title="线性DP-最大子数组和"></a>线性DP-最大子数组和</h2><table>
-<thead>
-<tr>
-<th align="left">题目</th>
-<th align="left">难度</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://leetcode-cn.com/problems/maximum-subarray/" target="_blank" rel="noopener">53. 最大子序和</a></td>
-<td align="left">简单</td>
-<td align="left">最大子数组和</td>
-</tr>
-<tr>
-<td align="left"><a href="https://leetcode-cn.com/problems/maximum-product-subarray/" target="_blank" rel="noopener">152. 乘积最大子数组</a></td>
-<td align="left">中等</td>
-<td align="left">最大子数组和</td>
-</tr>
-<tr>
-<td align="left"><a href="https://leetcode-cn.com/problems/maximum-sum-circular-subarray/" target="_blank" rel="noopener">918. 环形子数组的最大和</a></td>
-<td align="left">中等</td>
-<td align="left">最大子数组和</td>
-</tr>
-<tr>
-<td align="left"><a href="https://leetcode-cn.com/problems/max-submatrix-lcci/" target="_blank" rel="noopener">面试题 17.24. 最大子矩阵</a></td>
-<td align="left">困难</td>
-<td align="left">最大子数组和-二维</td>
-</tr>
-<tr>
-<td align="left"><a href="https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/" target="_blank" rel="noopener">363. 矩形区域不超过 K 的最大数值和</a></td>
-<td align="left">困难</td>
-<td align="left">最大子数组和</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<h3 id="最大子序和"><a href="#最大子序和" class="headerlink" title="最大子序和"></a>最大子序和</h3><img src="img/DP/53.png" style="zoom:50%;"/>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 方法1 贪心</span></span><br><span class="line">    <span class="comment">// T = O(n), S = O(1)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxSubArray_1</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums == <span class="keyword">null</span> || nums.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> res = Integer.MIN_VALUE, tmp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> num : nums)&#123;</span><br><span class="line">            tmp += num;</span><br><span class="line">            res = Math.max(res, tmp);</span><br><span class="line">            tmp = tmp &lt; <span class="number">0</span> ? <span class="number">0</span> : tmp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 方法 2 DP</span></span><br><span class="line">    <span class="comment">// T = O(N), S = O(N) -&gt; O(1)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxSubArray_1</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// exception input</span></span><br><span class="line">        <span class="keyword">int</span> pre = <span class="number">0</span>, res = nums[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> num : nums)&#123;</span><br><span class="line">            pre = Math.max(pre + num, num);</span><br><span class="line">            res = Math.max(res, pre);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 方法 3 线段树 + 分治</span></span><br><span class="line">    <span class="comment">// 可以方便地将所有运算以树的形式记忆化</span></span><br><span class="line">    <span class="comment">// 这样能够在O(logN)的时间复杂度下获取任意区间的最大子序和</span></span><br><span class="line">    <span class="comment">// T = O(logN), S = O(logN)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 自定义数据结构存储子区间状态</span></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Status</span> </span>&#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">int</span> lSum, rSum, mSum, iSum;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Status</span><span class="params">(<span class="keyword">int</span> lSum, <span class="keyword">int</span> rSum, <span class="keyword">int</span> mSum, <span class="keyword">int</span> iSum)</span></span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.lSum = lSum;   <span class="comment">// 包含区间左端元素的最大子序和</span></span><br><span class="line">            <span class="keyword">this</span>.rSum = rSum;   <span class="comment">// 包含区间右端元素的最大子序和</span></span><br><span class="line">            <span class="keyword">this</span>.mSum = mSum;   <span class="comment">// 区间的最大子序和</span></span><br><span class="line">            <span class="keyword">this</span>.iSum = iSum;   <span class="comment">// 区间所有元素和</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 求指定区间内的状态信息</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Status <span class="title">getInfo</span><span class="params">(<span class="keyword">int</span>[] arr, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(l == r)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Status(arr[l], arr[l], arr[l], arr[l]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> mid = (l + r) / <span class="number">2</span>;</span><br><span class="line">        Status lSub = getInfo(arr, l, mid);</span><br><span class="line">        Status rSub = getInfo(arr, mid + <span class="number">1</span>, r);</span><br><span class="line">        <span class="keyword">return</span> pushUp(lSub, rSub);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 将两个子区间的状态信息合并为更大区间的状态信息</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Status <span class="title">pushUp</span><span class="params">(Status l, Status r)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> lSum = Math.max(l.lSum, l.iSum + r.lSum);</span><br><span class="line">        <span class="keyword">int</span> rSum = Math.max(r.rSum, r.iSum + l.rSum);</span><br><span class="line">        <span class="keyword">int</span> mSum = Math.max(Math.max(l.mSum, r.mSum), l.rSum + r.lSum);</span><br><span class="line">        <span class="keyword">int</span> iSum = l.iSum + r.iSum;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Status(lSum, rSum, mSum, iSum);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 主函数</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxSubArray</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// exception input</span></span><br><span class="line">        <span class="keyword">return</span> getInfo(nums, <span class="number">0</span>, nums.length - <span class="number">1</span>).mSum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="乘积最大子数组"><a href="#乘积最大子数组" class="headerlink" title="乘积最大子数组"></a>乘积最大子数组</h3><img src="img/DP/152.png" style="zoom:50%">
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// solution 4 </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxProduct</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res, max, min;</span><br><span class="line">        res = max = min = nums[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; nums.length; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] &lt; <span class="number">0</span>)&#123;</span><br><span class="line">                <span class="keyword">int</span> tmp = max;</span><br><span class="line">                max = min;</span><br><span class="line">                min = tmp;</span><br><span class="line">            &#125;</span><br><span class="line">            max = Math.max(max * nums[i], nums[i]);</span><br><span class="line">            min = Math.min(min * nums[i], nums[i]);</span><br><span class="line">            res = Math.max(res, max);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="环形子数组的最大和"><a href="#环形子数组的最大和" class="headerlink" title="环形子数组的最大和"></a>环形子数组的最大和</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// T = O(N), S = O(1)</span></span><br><span class="line">    <span class="comment">// 两次计算 1. 最大连续子数组和， 2. 最小连续子数组和</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxSubarraySumCircular</span><span class="params">(<span class="keyword">int</span>[] A)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = A.length;</span><br><span class="line">        <span class="keyword">if</span>(len == <span class="number">1</span>) <span class="keyword">return</span> A[<span class="number">0</span>];</span><br><span class="line">        <span class="comment">// maxSum 普通的最大连续子数组和</span></span><br><span class="line">        <span class="comment">// minSum 不包含数组首末元素的最小连续子数组和</span></span><br><span class="line">        <span class="keyword">int</span> sum = A[<span class="number">0</span>], total = A[<span class="number">0</span>], maxSum = A[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; len; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(sum &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">                sum += A[i];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                sum = A[i];</span><br><span class="line">            &#125;</span><br><span class="line">            maxSum = Math.max(sum, maxSum);</span><br><span class="line">            total += A[i];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        sum = A[<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">int</span> minSum = A[<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; len - <span class="number">1</span>; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(sum &lt;= <span class="number">0</span>)&#123;</span><br><span class="line">                sum += A[i];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                sum = A[i];</span><br><span class="line">            &#125;</span><br><span class="line">            minSum = Math.min(minSum, sum);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> Math.max(maxSum, total - minSum);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="最大子矩阵"><a href="#最大子矩阵" class="headerlink" title="最大子矩阵"></a>最大子矩阵</h3><img src="img/DP/17-24.png" style="zoom:50%">
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="comment">// T = O(N^2), S = O(N)</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] getMaxMatrix(<span class="keyword">int</span>[][] matrix) &#123;</span><br><span class="line">        <span class="comment">// exception input</span></span><br><span class="line">        <span class="keyword">int</span> row = matrix.length;</span><br><span class="line">        <span class="keyword">int</span> col = matrix[<span class="number">0</span>].length;</span><br><span class="line">        <span class="comment">// 列方向压缩成一维数组</span></span><br><span class="line">        <span class="keyword">int</span>[] vector = <span class="keyword">new</span> <span class="keyword">int</span>[col];</span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">4</span>];</span><br><span class="line">        <span class="keyword">int</span> maxSum = matrix[<span class="number">0</span>][<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; row; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; col; k++) vector[k] = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = i; j &lt; row; j++)&#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; col; k++) vector[k] += matrix[j][k];</span><br><span class="line">                <span class="comment">// 最大子串和(一维)</span></span><br><span class="line">                <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">int</span> start = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> c = <span class="number">0</span>; c &lt; col; c++)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(sum &gt; <span class="number">0</span>)&#123;</span><br><span class="line">                        sum += vector[c];</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span>&#123;</span><br><span class="line">                        sum = vector[c];</span><br><span class="line">                        start = c;</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">if</span>(sum &gt; maxSum)&#123;</span><br><span class="line">                        maxSum = sum;</span><br><span class="line">                        res[<span class="number">0</span>] = i;</span><br><span class="line">                        res[<span class="number">1</span>] = start;</span><br><span class="line">                        res[<span class="number">2</span>] = j;</span><br><span class="line">                        res[<span class="number">3</span>] = c;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="线性DP-打家劫舍"><a href="#线性DP-打家劫舍" class="headerlink" title="线性DP-打家劫舍"></a>线性DP-打家劫舍</h2><h2 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h2><h2 id="区间动态规划"><a href="#区间动态规划" class="headerlink" title="区间动态规划"></a>区间动态规划</h2><h2 id="背包问题"><a href="#背包问题" class="headerlink" title="背包问题"></a>背包问题</h2><h2 id="状态压缩"><a href="#状态压缩" class="headerlink" title="状态压缩"></a>状态压缩</h2><h2 id="计数问题"><a href="#计数问题" class="headerlink" title="计数问题"></a>计数问题</h2><h2 id="矩阵快速幂"><a href="#矩阵快速幂" class="headerlink" title="矩阵快速幂"></a>矩阵快速幂</h2><h2 id="数位动态规划"><a href="#数位动态规划" class="headerlink" title="数位动态规划"></a>数位动态规划</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/11/24/DP_test/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -369,13 +290,14 @@
       
   
   
+
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://github.com/HeAohow/HeAohow.github.io/2020/03/24/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="heaohow">
-      <meta itemprop="description" content="世界映射到我的维度">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -396,8 +318,38 @@
 
               <time title="创建时间：2020-03-24 15:48:36" itemprop="dateCreated datePublished" datetime="2020-03-24T15:48:36+08:00">2020-03-24</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-01-06 16:16:43" itemprop="dateModified" datetime="2021-01-06T16:16:43+08:00">2021-01-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">环境搭建</span></a>
+                </span>
+            </span>
 
-          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>357</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
 
         </div>
       </header>
@@ -409,17 +361,18 @@
 
       
           <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
@@ -495,7 +448,7 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">heaohow</p>
-  <div class="site-description" itemprop="description">世界映射到我的维度</div>
+  <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -505,6 +458,18 @@
           <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -535,8 +500,18 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">heaohow</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">7k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">6 分钟</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
         
@@ -562,7 +537,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
@@ -575,6 +550,10 @@
 
 
 
+  
+<script src="/js/local-search.js"></script>
+
+
 
 
 
@@ -587,6 +566,61 @@
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
